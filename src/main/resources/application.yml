@@ -1,0 +1,26 @@
+eureka:
+  client:
+    instance:
+      instaceId: ${spring.application.name}:${random.int}
+#    register-with-eureka: false
+#    fetch-registry: false
+    registerWithEureka: true
+    fetchRegistry: true
+    serviceUrl:
+      defaultZone: http://localhost:8081/eureka
+
+spring:
+  application:
+    name: pedido-ms
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/alurafood-pedidos?createDatabaseIfNotExist=true
+    username: root
+    password: minhaSenhaForte
+  jpa:
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+server:
+  port: 0
