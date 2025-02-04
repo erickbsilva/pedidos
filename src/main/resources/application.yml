@@ -1,7 +1,7 @@
 eureka:
+  instance:
+    instanceId: ${spring.application.name}:${random.int}
   client:
-    instance:
-      instaceId: ${spring.application.name}:${random.int}
 #    register-with-eureka: false
 #    fetch-registry: false
     registerWithEureka: true
