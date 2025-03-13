@@ -11,7 +11,7 @@ eureka:
 
 spring:
   application:
-    name: pedido-ms
+    name: pedidos-ms
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
     url: jdbc:mysql://localhost:3306/alurafood-pedidos?createDatabaseIfNotExist=true

@@ -31,6 +31,7 @@ public class PedidoController {
             PedidoDto dto = service.obterPorId(id);
 
             return  ResponseEntity.ok(dto);
+
         }
 
         @GetMapping("/porta")
